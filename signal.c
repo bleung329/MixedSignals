@@ -16,7 +16,7 @@ void sighandle(int signum)
 	{
 		if (signum == SIGUSR1)
 		{
-			printf("Received SIGUSR1. How mysterious.\n");
+			printf("Received SIGUSR1. How mysterious.\nBy the way my PID is: %d\n",getpid());
 		}
 	}
 }
